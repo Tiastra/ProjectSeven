@@ -15,14 +15,14 @@
 
     <body class="w3-light-grey">
         <!-- Menu -->
-        <div class="w3-bar w3-white w3-large">
-            <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Home</a>
-            <a href="views/clienteView.php" class="w3-bar-item w3-button w3-mobile">Cliente</a>
-            <a href="#titulo" class="w3-bar-item w3-button w3-mobile">Título</a>
+        <div class="w3-bar w3-large w3-red">
+            <a href="index.php" class="w3-bar-item w3-button w3-mobile"><i class="f w3-margin-right"></i>Home</a>
+            <a href="views/cliente/clienteAdmin.php" class="w3-bar-item w3-button w3-mobile">Cliente</a>
+            <a href="views/titulo/tituloAdmin.php" class="w3-bar-item w3-button w3-mobile">Título</a>
         </div>
 
-        <div class="w3-display-container w3-content" style="max-width:1500px;">
-            <img class="w3-image" src="/img/Logo.jpg" alt="TiastraSoft Logo" style="min-width:1000px" width="812" height="414">
+        <div class="w3-display-container w3-content w3-center" style="max-width:1600px;">
+            <img class="w3-image" src="http://camarabiasfortes.mg.gov.br/wp-content/uploads/2021/10/Logo-2.0.jpg" alt="TiastraSoft Logo">
         </div>
 
         <footer class="w3-padding-32 w3-black w3-center">
@@ -32,6 +32,5 @@
             </div>
             <p>Powered by <a href="https://github.com/Tiastra" target="_blank" class="w3-hover-text-green">Tiago Oliveira</a></p>
         </footer>
-
     </body>
 </html>

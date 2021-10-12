@@ -15,11 +15,21 @@
 
 <body class="w3-light-grey">
 <!-- Menu -->
-<div class="w3-bar w3-white w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Home</a>
-    <a href="#cliente" class="w3-bar-item w3-button w3-mobile">Cliente</a>
-    <a href="#titulo" class="w3-bar-item w3-button w3-mobile">Título</a>
+<div class="w3-bar w3-large w3-red">
+    <a href="../../index.php" class="w3-bar-item w3-button w3-mobile"><i class=" w3-margin-right"></i>Home</a>
+    <a href="clienteAdmin.php" class="w3-bar-item w3-button w3-mobile">Cliente</a>
+    <a href="../titulo/tituloAdmin.php" class="w3-bar-item w3-button w3-mobile">Título</a>
 </div>
+
+<div class="w3-container w3-padding-32 w3-black w3-card" style="margin:32px 0;">
+    <h2>Cadastro de Cliente</h2>
+    <p></p>
+    <a href="clienteForm.php">
+    <button type="button" class="w3-button w3-green w3-margin-top">Cadastrar</button>
+    </a>
+</div>
+
+
 
 <footer class="w3-padding-32 w3-black w3-center">
     <div class="w3-xlarge w3-padding-16">
