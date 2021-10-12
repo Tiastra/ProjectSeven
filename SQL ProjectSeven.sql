@@ -18,21 +18,21 @@ CREATE TABLE IF NOT EXISTS `projectseven`.`Cliente` (
   `data_nascimento` DATE NOT NULL,
   `email_cliente` VARCHAR(45) NOT NULL,
   `telefone_cliente` VARCHAR(14) NULL DEFAULT NULL,
-  `id_endereço` INT(11) NOT NULL,
+  `id_endereco` INT(11) NOT NULL,
   PRIMARY KEY (`id_cliente`),
-  UNIQUE INDEX `documento_cliente_UNIQUE` (`documento_cliente` ASC) VISIBLE,
-  UNIQUE INDEX `email_cliente_UNIQUE` (`email_cliente` ASC) VISIBLE,
-  INDEX `fk_Cliente_Endereço1_idx` (`id_endereço` ASC) VISIBLE,
-  CONSTRAINT `fk_Cliente_Endereço1`
-    FOREIGN KEY (`id_endereço`)
-    REFERENCES `projectseven`.`Endereço` (`id_endereço`)
+  UNIQUE INDEX `documento_cliente_UNIQUE` (`documento_cliente` ASC),
+  UNIQUE INDEX `email_cliente_UNIQUE` (`email_cliente` ASC),
+  INDEX `fk_Cliente_Endereco1_idx` (`id_endereco` ASC),
+  CONSTRAINT `fk_Cliente_Endereco1`
+    FOREIGN KEY (`id_endereco`)
+    REFERENCES `projectseven`.`Endereco` (`id_endereco`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `projectseven`.`Endereço` (
-  `id_endereço` INT(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `projectseven`.`Endereco` (
+  `id_endereco` INT(11) NOT NULL AUTO_INCREMENT,
   `cep` VARCHAR(8) NULL DEFAULT NULL,
   `logradouro` VARCHAR(60) NOT NULL,
   `numero` INT(11) NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `projectseven`.`Endereço` (
   `cidade` VARCHAR(60) NOT NULL,
   `estado` VARCHAR(45) NOT NULL,
   `pais` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id_endereço`))
+  PRIMARY KEY (`id_endereco`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
@@ -53,12 +53,12 @@ CREATE TABLE IF NOT EXISTS `projectseven`.`Titulo` (
   `data_atualizacao` VARCHAR(45) NOT NULL,
   `id_cliente` INT(11) NOT NULL,
   PRIMARY KEY (`id_titulo`),
-  INDEX `fk_Titulo_Cliente1_idx` (`id_cliente` ASC) VISIBLE,
+  INDEX `fk_Titulo_Cliente1_idx` (`id_cliente` ASC),
   CONSTRAINT `fk_Titulo_Cliente1`
     FOREIGN KEY (`id_cliente`)
     REFERENCES `projectseven`.`Cliente` (`id_cliente`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
