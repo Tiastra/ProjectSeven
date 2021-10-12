@@ -1,5 +1,9 @@
 <?php
 
+namespace App\models;
+
+use App\db\ConectionPS;
+
 class Endereco
 {
     /**
@@ -58,7 +62,7 @@ class Endereco
 
     public function atualizar(){
 
-        return (new ConectionPS('Endereco'))->update('id = '.$this->id_endereco,[
+        return (new ConectionPS('Endereco'))->update('id_endereco = '.$this->id_endereco,[
             'cep' => $this->cep,
             'logradouro' => $this->logradouro,
             'numero' => $this->numero,
@@ -71,11 +75,11 @@ class Endereco
     }
 
     public function excluir(){
-        return (new ConectionPS('Endereco'))->delete('id = '.$this->id_endereco);
+        return (new ConectionPS('Endereco'))->delete('id_endereco = '.$this->id_endereco);
     }
 
     public static function getEndereco($id_endereco){
-        return (new ConectionPS('Endereco'))->select('id = '.$id_endereco)
+        return (new ConectionPS('Endereco'))->select('id_endereco = '.$id_endereco)
             ->fetchObject(self::class);
     }
 }

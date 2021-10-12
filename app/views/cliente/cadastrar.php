@@ -1,6 +1,8 @@
 <?php
 
-include("../../controllers/ClienteController.php");
+namespace App\views\cliente;
+require __DIR__.'/../../../vendor/autoload.php';
+use App\controllers\ClienteController;
 
 $clienteController = new ClienteController();
 

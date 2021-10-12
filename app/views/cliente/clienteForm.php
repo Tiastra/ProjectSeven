@@ -44,7 +44,7 @@
             </label>
         </p>
         <p>
-            <label>CEP
+            <label>Telefone
                 <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Telefone" name="telefone_cliente">
             </label>
         </p>
@@ -100,7 +100,7 @@
 <footer class="w3-padding-32 w3-black w3-center">
     <div class="w3-xlarge w3-padding-16">
         <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <a href="https://www.linkedin.com/in/carlos-tiago-oliveira-03a5a0182/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
     <p>Powered by <a href="https://github.com/Tiastra" target="_blank" class="w3-hover-text-green">Tiago Oliveira</a></p>
 </footer>

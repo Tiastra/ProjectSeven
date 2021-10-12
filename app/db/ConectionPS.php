@@ -1,5 +1,11 @@
 <?php
 
+namespace App\db;
+
+use \PDO;
+use \PDOException;
+
+
 class ConectionPS{
 
     private $table;
