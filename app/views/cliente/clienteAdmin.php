@@ -16,7 +16,6 @@ use App\controllers\ClienteController;
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../../css/W3.css">
-<link rel="stylesheet" href="../../css/footer.css">
 
 <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
@@ -77,7 +76,7 @@ foreach($clientes as $cliente){
 
 $resultados = strlen($resultados) ? $resultados : '<tr>
                                                        <td colspan="6" class="text-center">
-                                                              Nenhuma vaga encontrada
+                                                              Nenhum registro encontrado!
                                                        </td>
                                                     </tr>';
 

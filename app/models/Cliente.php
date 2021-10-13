@@ -3,6 +3,7 @@
 namespace App\models;
 
 use App\db\ConectionPS;
+use DateTime;
 use \PDO;
 
 
@@ -12,26 +13,32 @@ class Cliente
      * @var int
      */
     public $id_cliente;
+
     /**
      * @var string
      */
     public $nome_cliente;
+
     /**
      * @var int
      */
     public $documento_cliente;
+
     /**
      * @var datetime
      */
     public $data_nascimento;
+
     /**
      * @var string
      */
     public $email_cliente;
+
     /**
      * @var string
      */
     public $telefone_cliente;
+
     /**
      * @var int
      */
@@ -60,7 +67,6 @@ class Cliente
             'data_nascimento' => $this->data_nascimento,
             'email_cliente' => $this->email_cliente,
             'telefone_cliente' => $this->telefone_cliente,
-            'id_endereco' => $this->id_endereco,
         ]);
     }
 
