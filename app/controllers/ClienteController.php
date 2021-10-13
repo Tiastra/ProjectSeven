@@ -47,8 +47,6 @@ Class ClienteController{
 
     public function editar($id){
 
-//            echo '<pre>'; print_r($id); echo '</pre>'; exit;
-
         $cliente = Cliente::getCliente($id);
 
         $cliente->nome_cliente = $_POST['nome_cliente'];

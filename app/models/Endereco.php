@@ -10,34 +10,42 @@ class Endereco
      * @var int
      */
     public $id_endereco;
+
     /**
      * @var string
      */
     public $cep;
+
     /**
      * @var string
      */
     public $logradouro;
+
     /**
      * @var int
      */
     public $numero;
+
     /**
      * @var string
      */
     public $complemento;
+
     /**
      * @var string
      */
     public $bairro;
+
     /**
      * @var string
      */
     public $cidade;
+
     /**
      * @var string
      */
     public $estado;
+
     /**
      * @var string
      */
